@@ -1,0 +1,68 @@
+
+
+.create-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    background-color: #F2F4F3;
+    width: 100%;
+    height: fit-content;
+}
+
+.create-section h1 {
+  font-size: 23px;
+  font-weight: bold;
+  font-style: italic;
+  color: #855C3F;
+  margin: 0 0 1em;
+}
+
+.create-section form {
+    border: none;
+    outline: none;
+}
+
+.create-section form label {
+    font-weight: 500;
+    font-size: 17px;
+    color: #636363;
+    margin-bottom: 35px;
+}
+
+
+.create-section form input {
+    width: 100%;
+    height: 30px;
+    color: #636363;
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #7f7f7f;
+    outline: none;
+    margin-bottom: 35px;
+    padding: 1.5em 1em;
+}
+
+.create-section form textarea { 
+    width: 100%;
+    height: 200px;
+    background: none;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #7f7f7f;
+    color: #636363;
+    margin-bottom: 35px;
+    padding: 1.5em 1em;
+}
+
+.create-section form button {
+    border: none;
+    background: #855C3F;
+    color: white;
+    width: 133px;
+    height: 51px;
+    padding: 1em 1.5em;
+    margin: 0 8em;
+}
+
+

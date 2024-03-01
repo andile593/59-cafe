@@ -1,0 +1,83 @@
+
+/* Hero section styles */
+
+.hero-section {
+    background-image: url('./assets/hero-sec.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 505px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2em;
+    position: relative;
+}
+
+.hero-section h1 {
+    color: white;
+    padding: 0 0 20px; 
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.hero-section p {
+    color: white;
+    padding: 0 0 20px; 
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+.hero-section a {
+    width: 133px;
+    height: 51px;
+    color: #855C3F;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #F2F4F3;
+    padding: 1em 2.5em;
+}
+
+/* About section styles */
+
+
+.about-section {
+    background-color: #A9927D;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-section h1 {
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    margin: 0 0 20px;
+}
+
+.about-section p {
+    color: white;
+    margin: 0 0 20px;
+}
+
+.about-section span {
+    background-image: url('./assets/about-pic.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 330px;
+    height: 186px;
+    margin: 0 0 20px;
+}
+
+/* Products section styles */
+
+.products-section h1 {
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    margin: 0 0 20px;
+}
