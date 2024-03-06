@@ -1,5 +1,5 @@
 import { productTypes } from "./types";
-import { db } from "../firebase/firebase";
+import { db } from "../../firebase/firebase";
 
 export const addNewProduct = (productData) => async (dispatch) => {
   try {

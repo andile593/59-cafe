@@ -2,7 +2,7 @@
 /* Hero section styles */
 
 .hero-section {
-    background-image: url('./assets/hero-sec.jpg');
+    background-image: url('../../assets/images/hero-sec.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,7 +64,7 @@
 }
 
 .about-section span {
-    background-image: url('./assets/about-pic.jpg');
+    background-image: url('../../assets/images/about-pic.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;

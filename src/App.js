@@ -1,14 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from "./Components/NavBarComponent/navBar";
-import Home from "./Components/HomeComponent/Home";
-import About from "./Components/AboutComponent/About";
-import Blogs from "./Components/BlogsComponent/Blogs";
-import Cart from "./Components/CartComponent/Cart";
-import Contact from "./Components/ContactComponent/Contact";
-import Products from "./Components/ProductsComponent/Products";
-import SignInAuth from "./Components/SignInComponent/signInAuth";
-import SignUpAuth from "./Components/SignUpComponent/signUpAuth";
-import Create from "./Components/CreateComponent/Create";
+import Navbar from "./Components/common/Header/navBar";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Blogs from "./pages/Blogs/Blogs";
+import Cart from "./Components/cart/shoppingCart";
+import Contact from "./pages/Contact/Contact";
+import Products from "./pages/Products/Products";
+import Create from "./Components/Admin/Create";
 import "./App.css";
 
 function App() {
@@ -23,13 +21,8 @@ function App() {
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/contact" element={<Contact />} />
-            <Route
-              path="/products"
-              element={<Products products={products} />}
-            />
+            <Route path="/products" element={<Products />} />
             <Route path="/create" element={<Create />} />
-            <Route path="/signup" element={<SignUpAuth />} />
-            <Route path="/login" element={<SignInAuth />} />
           </Routes>
         </div>
       </div>

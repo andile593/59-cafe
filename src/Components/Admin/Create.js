@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { addNewProduct } from "../redux/products/actions";
+import { addNewProduct } from "../../redux/products/actions";
 
 const Create = () => {
   const navigate = useNavigate();

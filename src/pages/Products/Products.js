@@ -1,4 +1,4 @@
-// ProductList.js
+
 
 const ProductList = ({ products }) => {
   return (
