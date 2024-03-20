@@ -1,0 +1,38 @@
+.hero-section {
+    background-image: url('../../../assets/images/hero-sec.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 505px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2em;
+    position: relative;
+}
+
+.hero-section h1 {
+    color: white;
+    padding: 0 0 20px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.hero-section p {
+    color: white;
+    padding: 0 0 20px;
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+.hero-section a {
+    width: 133px;
+    height: 51px;
+    color: #855C3F;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #F2F4F3;
+    padding: 1em 2.5em;
+}

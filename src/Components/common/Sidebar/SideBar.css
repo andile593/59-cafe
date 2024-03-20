@@ -1,0 +1,32 @@
+.sideBar-container {
+    position: absolute;
+    width: 250px;
+    height: 93vh;
+    top: 3em;
+    left: 0;
+    z-index: 10;
+    background: #f2f4f3;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+
+.sideBar-container.open {
+    transform: translateX(0);
+}
+
+.sideBar-element {
+    width: 100%;
+    height: 50px;
+    padding: 15px 20px;
+}
+
+.sideBar-element a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #855c3f;
+
+}

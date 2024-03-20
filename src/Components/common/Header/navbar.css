@@ -6,6 +6,7 @@
     display: flex;justify-content: space-between;
     align-items: center;
     background-color: #855C3F;
+    position: relative;
 }
 
 .hamburger-btn {

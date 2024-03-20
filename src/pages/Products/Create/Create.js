@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "../../Config/firebase";
+import { db } from "../../../firebase/firebase";
 import "./Create.css";
 
 const Create = () => {
@@ -27,8 +27,7 @@ const Create = () => {
     setPrice(e.target.value);
   };
 
-
-
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -40,17 +39,7 @@ const Create = () => {
         quantity: 1,
       }); 
       console.log("Document written with ID:", addingProduct.id);
-      // setProducts((prevProducts) => [
-      //   ...prevProducts,
-      //   {
-      //     id: addingProduct.id,
-      //     name: title,
-      //     description: description,
-      //     amount: price,
-      //     quantity: 1,
-      //   },
-      // ]);
-      // navigate("/products");
+     
     } catch (error) {
       console.error("Error adding document: ", error);
     }

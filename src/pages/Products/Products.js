@@ -1,17 +1,11 @@
 
 
-const ProductList = ({ products }) => {
+const Products = () => {
   return (
       <div>
-          {products.map(product => (
-              <div key={product.id}>
-                  <h3>{product.name}</h3>
-                  <p>{product.description}</p>
-                  <p>${product.price}</p>
-              </div>
-          ))}
+        <p>Products</p>
       </div>
   );
 };
 
-export default ProductList;
+export default Products;

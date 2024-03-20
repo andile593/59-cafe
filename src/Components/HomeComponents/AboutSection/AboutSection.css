@@ -1,0 +1,29 @@
+.about-section {
+    background-color: #A9927D;
+    padding: 1.4em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-section h1 {
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    margin: 0 0 20px;
+}
+
+.about-section p {
+    color: white;
+    margin: 0 0 20px;
+}
+
+.about-section span {
+    background-image: url('../../../assets/images/about-pic.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 330px;
+    height: 186px;
+    margin: 0 0 20px;
+}

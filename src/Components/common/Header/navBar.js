@@ -1,11 +1,19 @@
-import React from "react";
+import { useState } from "react";
 import { Link } from 'react-router-dom'
 import "./navbar.css";
+import SideBar from "../Sidebar/SideBar";
 
 const NavBar = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
   return (
     <div className="nav-container">
-      <div className="hamburger-btn">
+      <SideBar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+      <div className="hamburger-btn" onClick={toggleSidebar}>
         <span></span>
       </div>
       <Link to='/' >59-Cafe</Link>
