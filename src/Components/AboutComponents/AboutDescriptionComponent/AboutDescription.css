@@ -1,0 +1,67 @@
+
+.about-wrapper {
+    background: #A9927D;
+    width: 100%;
+    height: fit-content;
+    padding: 1.5em;
+}
+
+.about-wrapper h2 {
+    font-size: 23px;
+    color: white;
+    margin-bottom: 0.5em;
+}
+
+.about-wrapper p {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.about-title {
+    margin-top: 1em;
+}
+
+.values-container {
+    display: flex;
+    gap: 3em;
+    padding: 0 1em;
+}
+
+.values-container ul li {
+    list-style: disc;
+    color: white;
+}
+
+.about-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6em;
+}
+
+.about-images div {
+    width: 150px;
+    height: 182px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-images div img {
+    width: 150px;
+    height: 140px;
+    object-fit: cover;
+    margin: 0 0 .5em;
+}
+
+
+.about-images div h3 {
+    color: white;
+}
+
+.about-images div h4 {
+    color: #fff;
+    font-style: italic;
+    font-weight: 200;
+}

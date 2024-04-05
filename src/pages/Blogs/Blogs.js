@@ -1,9 +1,9 @@
-import React from "react";
+import BlogsComponent from "../../Components/HomeComponents/BlogsSection/BlogsSection"
 
 const Blogs = () => {
     return (
         <>
-            <h1>Blogs Page</h1>
+          <BlogsComponent />
         </>
     )
 }

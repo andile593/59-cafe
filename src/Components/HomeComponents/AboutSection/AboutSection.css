@@ -3,7 +3,8 @@
     padding: 1.4em;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .about-section h1 {
@@ -11,9 +12,10 @@
     font-weight: bold;
     color: white;
     margin: 0 0 20px;
+    width: 100%;
 }
 
-.about-section p {
+.about-content p {
     color: white;
     margin: 0 0 20px;
 }
@@ -23,7 +25,23 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 330px;
-    height: 186px;
-    margin: 0 0 20px;
+    width: 100%;
+    min-height: 250px;
+    margin: 0 auto;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .about-content {
+        width: 50%;
+    }
+
+
+    .about-section span {
+        width: 50%;
+    }
+
+
+
 }

@@ -1,68 +1,83 @@
-
-
+/* Base styles */
 .create-section {
+    max-width: 600px;
+    margin: 0 auto 12em;
+    padding: 4em 20px 0;
+    background-color: #fff;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .create-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #855C3F;
+  }
+  
+  .create-section form {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    padding: 1em;
-    background-color: #F2F4F3;
-    width: 100%;
-    height: fit-content;
-}
-
-.create-section h1 {
-  font-size: 23px;
-  font-weight: bold;
-  font-style: italic;
-  color: #855C3F;
-  margin: 0 0 1em;
-}
-
-.create-section form {
+  }
+  
+  .create-section label {
+    font-size: 18px;
+    color: #855C3F;
+    margin-bottom: 5px;
+  }
+  
+  .create-section input[type="text"],
+  .create-section input[type="number"],
+  .create-section textarea {
+    padding: 10px;
+    margin-bottom: 15px;
     border: none;
-    outline: none;
-}
-
-.create-section form label {
-    font-weight: 500;
-    font-size: 17px;
-    color: #636363;
-    margin-bottom: 35px;
-}
-
-
-.create-section form input {
-    width: 100%;
-    height: 30px;
-    color: #636363;
-    background: none;
-    border: 0;
-    border-bottom: 1px solid #7f7f7f;
-    outline: none;
-    margin-bottom: 35px;
-    padding: 1.5em 1em;
-}
-
-.create-section form textarea { 
-    width: 100%;
-    height: 200px;
-    background: none;
-    outline: none;
-    border: 0;
-    border-bottom: 1px solid #7f7f7f;
-    color: #636363;
-    margin-bottom: 35px;
-    padding: 1.5em 1em;
-}
-
-.create-section form button {
+    border-radius: 5px;
+    background-color: #A9927D;
+    color: #ffffff;
+  }
+  
+  .create-section input[type="file"] {
+    margin-bottom: 20px;
+  }
+  
+  .create-section button {
+    padding: 10px 20px;
+    background-color: #855C3F;
+    color: #ffffff;
     border: none;
-    background: #855C3F;
-    color: white;
-    width: 133px;
-    height: 51px;
-    padding: 1em 1.5em;
-    margin: 0 8em;
-}
-
-
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-section button:hover {
+    background-color: #855C3F;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .create-section {
+      max-width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .create-section h1 {
+      font-size: 20px;
+    }
+  
+    .create-section label {
+      font-size: 16px;
+    }
+  
+    .create-section input[type="text"],
+    .create-section input[type="number"],
+    .create-section textarea {
+      font-size: 14px;
+    }
+  
+    .create-section button {
+      font-size: 16px;
+    }
+  }
+  

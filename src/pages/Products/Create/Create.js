@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "../../../firebase/firebase";
+import { db, storage } from "../../../firebase/firebase";
+import { getProducts } from '../productService'
 import "./Create.css";
 
 const Create = () => {
@@ -27,23 +29,45 @@ const Create = () => {
     setPrice(e.target.value);
   };
 
- 
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    setImage(file);
+  };
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const addingProduct = await addDoc(productCollectionRef, {
+      const storageRef = ref(storage, `images/${image.name}`);
+      console.log("Storage Reference:", storageRef);
+
+      if (!image) {
+        console.error("No image selected.");
+        return;
+      }
+
+      await uploadBytes(storageRef, image);
+      console.log("Image uploaded successfully.");
+
+      const imageUrl = await getDownloadURL(storageRef);
+      console.log("Image URL:", imageUrl);
+
+      await addDoc(productCollectionRef, {
         name: title,
         description: description,
         amount: price,
         quantity: 1,
-      }); 
-      console.log("Document written with ID:", addingProduct.id);
-     
+        image: imageUrl,
+      });
+
+      getProducts();
+      navigate('/products');
     } catch (error) {
-      console.error("Error adding document: ", error);
+      console.error("Error:", error);
     }
   };
+
 
   return (
     <div className="create-section">
@@ -70,7 +94,13 @@ const Create = () => {
           value={price}
           onChange={handlePriceChange}
         />
-
+        <label>Image:</label>
+        <input
+          type="file"
+          accept="image/*"
+          required
+          onChange={handleImageChange}
+        />
         <button>Add Product</button>
       </form>
     </div>

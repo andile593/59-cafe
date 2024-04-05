@@ -1,9 +1,10 @@
 import "./AboutSection.css"
 
 const AboutSection = () => {
-    return (
-        <div className="about-section">
-        <h1>About us</h1>
+  return (
+    <div className="about-section">
+      <h1>About us</h1>
+      <div className="about-content">
         <p>
           Welcome to 59 Cafe, a family-owned bakery that has been serving the
           East Rand community for over 3 years. Our bakery was founded on a
@@ -18,9 +19,10 @@ const AboutSection = () => {
           flavours and techniques, and we're committed to delivering the best
           possible experience to our customers.
         </p>
-        <span></span>
       </div>
-    )
+      <span></span>
+    </div>
+  )
 }
 
 export default AboutSection

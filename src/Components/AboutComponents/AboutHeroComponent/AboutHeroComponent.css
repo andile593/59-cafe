@@ -1,0 +1,32 @@
+.about-hero-section {
+    background-image: url('../../../assets/images/hero-sec.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 505px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 48px 2em 0;
+    position: relative;
+}
+
+.about-hero-section div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #855c3f2e;
+}
+
+.about-hero-section h1 {
+    color: white;
+    padding: 0 0 20px;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    z-index: 5;
+}
+
