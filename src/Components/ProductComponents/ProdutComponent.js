@@ -12,8 +12,8 @@ const Product = ({ products }) => {
     };
 
     // Split the products into two sets for two different Swipers
-    const productsForSwiper1 = products.slice(0, products.length / 2);
-    const productsForSwiper2 = products.slice(products.length / 2);
+    const productsForSwiper1 = products ? products.slice(0, products.length / 2) : [];
+    const productsForSwiper2 = products ? products.slice(products.length / 2) : [];
 
     return (
         <>

@@ -30,3 +30,23 @@
     color: #855c3f;
 
 }
+
+@media only screen and (min-width: 992px) {
+    .sideBar-container {
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        flex-direction: unset;
+        top: 0;
+        background: none;
+        transform: translateX(0);
+        transition: none;
+    }
+
+    .sideBar-element a {
+        color: #ffffff;
+    }
+
+
+    
+}

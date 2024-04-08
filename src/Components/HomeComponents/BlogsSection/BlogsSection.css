@@ -1,8 +1,6 @@
-
 .blogs-section {
     background: #0A0908;
     width: 100%;
-    height: fit-content;
     padding: 1.4em;
     display: flex;
     flex-direction: column;
@@ -17,17 +15,14 @@
 
 .blogs-wrapper {
     width: 100%;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     margin: 1.4em 0;
-    
 }
 
 
 .blog {
     width: 100%;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     margin-bottom: 2em;
@@ -36,9 +31,9 @@
 
 .blog img {
     width: 100%;
-    height: 219px;
+    object-fit: cover;
+    max-height: 219px;
 }
-
 
 .blog div {
     padding: 0 1em;
@@ -64,10 +59,73 @@
 
 .blog div button {
     margin: 1em 0;
-    width: 306px;
+    width: 100%;
     height: 45px;
-    background:  #855C3F;
+    background: #855C3F;
     color: #fff;
     font-size: 17px;
     font-weight: bold;
+    border: none;
+}
+
+
+@media screen and (min-width: 576px) {
+    .blogs-section {
+        padding: 2em;
+    }
+
+    .blog img {
+        max-height: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .blog {
+        flex-direction: row;
+    }
+
+    .blog img {
+        width: 50%;
+        /* Adjust image width */
+    }
+
+    .blog div {
+        padding: 1em;
+    }
+
+    .blog div h2 {
+        font-size: 18px;
+        /* Adjust heading font size */
+    }
+
+    .blog div button {
+        width: auto;
+        padding: .5em 2em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .blogs-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .blog {
+        margin-right: 2em;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    .blog div h2 {
+        font-size: 20px;
+    }
+
+
+    .blog div p {
+        font-size: 17px;
+    }
+
 }

@@ -1,20 +1,7 @@
-import { useState, useEffect } from 'react'
 import ProductComponent from '../../Components/ProductComponents/ProdutComponent';
-import { getProducts } from './productService';
 import './products.css'
 
-const Products = () => {
-
-  const [products, setProducts] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const productsData = await getProducts();
-      setProducts(productsData)
-    };
-    fetchData();
-  }, []);
-
+const Products = ({ products }) => {
   return (
     <div>
        {products === null ? (

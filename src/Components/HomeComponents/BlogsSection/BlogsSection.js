@@ -7,7 +7,9 @@ import "./BlogsSection.css"
 const BlogsSection = () => {
     return (
         <div className="blogs-section">
-            <h1>Products</h1>
+            <h1>
+                Blogs
+            </h1>
             <div className="blogs-wrapper">
                 <div className="blog">
                     <img src={Picture1} alt="" />

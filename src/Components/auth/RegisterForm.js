@@ -2,6 +2,7 @@ import { auth } from "../../firebase/firebase";
 import { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { NavLink, useNavigate } from "react-router-dom";
+import './RegisterForm.css'; // Import the CSS file
 
 const SignUpAuth = () => {
   const navigate = useNavigate();
@@ -18,7 +19,8 @@ const SignUpAuth = () => {
       );
       const user = userCredential.user;
       console.log("User created:", user);
-      navigate("/login");
+      console.log("the current user is", auth.currentUser)
+      // navigate("/login");
     } catch (error) {
       const errorCode = error.code;
       const errorMessage = error.message;
@@ -27,7 +29,7 @@ const SignUpAuth = () => {
   };
 
   return (
-    <>
+    <div className="signup-container">
       <h2>Register</h2>
       <input
         placeholder="Email..."
@@ -45,7 +47,7 @@ const SignUpAuth = () => {
       <p>
         Already have an account? <NavLink to="/login">Sign in</NavLink>
       </p>
-    </>
+    </div>
   );
 };
 

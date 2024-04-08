@@ -12,11 +12,11 @@ const NavBar = () => {
 
   return (
     <div className="nav-container">
-      <SideBar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       <div className="hamburger-btn" onClick={toggleSidebar}>
         <span></span>
       </div>
       <Link to='/' >59-Cafe</Link>
+      <SideBar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       <div className="shopping-cart">
         <Link to='/cart'>
           <svg
