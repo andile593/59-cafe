@@ -1,4 +1,5 @@
-# Bakery Ecommerce Website
+# 59-Cafe Bakery Ecommerce Website
+![Screenshot 2024-04-10 141536](https://github.com/andile593/59-cafe/assets/71168590/9233f28a-8748-476d-96ae-f07ce9d4610b)
 
 Welcome to our Bakery Ecommerce Website! This project is built using React for the frontend and Firebase for backend services.
 
